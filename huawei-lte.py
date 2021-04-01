@@ -23,7 +23,8 @@ def main(argv):
 
   admin_password = os.environ.get("ADMIN_PASSWORD")
   connection = AuthorizedConnection('http://192.168.8.1/',
-      username='admin', password=admin_password)
+                                    username='admin',
+                                    password=admin_password)
 
   client = Client(connection)
 
